@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Amita');
+body {
+  padding: 50px;
+  font-family: 'Amita', cursive;
+}
+
+.bottom-border {
+  border-bottom: 2px #bbb solid;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.input-group {
+  width: 100%;
+  padding: 10px;
+}
+
+label {
+  width: 20%;
+}
+
+label, input {
+  float: left;
+  height: 25px;
+}
+
+input[type="text"] {
+   margin-left: 10px;
+}
+
+.clearfix {
+  clear: both;
+}
