@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(name="form-express", method="post", action='/users')
+        div.input
+            span.label username
+            br
+            input(type="text", name="username")
+            br
+            span.label password
+            br
+            input(type="password", name="password")
+
+        div.actions
+            input(type="submit", value="submit")
+  if !usr && !pass
+  else
+    h2 username:
+    h3= usr
+    h2 password:
+    h3= pass
+    h2 username & password :
+    h3= usr + ' ' + pass
