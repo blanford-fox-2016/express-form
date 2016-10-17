@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dharmadi mangku widodo</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+
+    <% if(firstname != '' && lastname != ''){ %>
+      <h1><%= firstname %> <%= lastname%></h1>
+      <p>Welcome to <%= firstname %> <%= lastname%></p>
+    <%} %>
+
+    <form action="/users" method="post">
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
