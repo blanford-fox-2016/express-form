@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+    form(name="add-estimation", method="post",action='/users')
+        div.input
+            span.label Username :
+            input(type="text", name="username")
+        div.input
+            span.label Password :
+            input(type="password", name="password")
+        div.actions
+            input(type="submit", value="add")
+
+    h1=username
+    h1=password
