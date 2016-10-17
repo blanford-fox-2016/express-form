@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Form
+  form(name = "input", method = "post")
+    div.input
+        span.label Text
+        input(type = "text", name = "sentence")
+    div.actions
+        input(type="submit", value="add")
+  div
+    !{result}
