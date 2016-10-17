@@ -6,13 +6,13 @@ var router = express.Router();
 //   res.send('respond with a resource hallo');
 // });
 
-router.get('/:user?/:password?', function(req, res, next) {
-  var name = req.param('say')
-  var data = {
-    username : req.params.user,
-    password : req.params.password
+router.get('/', function(req, res, next) {
+  if(req.param('kalimat') == undefined){
+    kalimat = "";
+  }else{
+    var kalimat = req.param('kalimat').toLowerCase();
   }
-  res.render('view_user', { dataini: data, nama : name });
+  res.render('view_user', { kalimat});
 });
 
 module.exports = router;
